@@ -1,55 +1,139 @@
-body{
-    background-color: darkslategray;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.header {
-    display: flex;
-    align-items: center;
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: dodgerblue;
+    padding: 16px;
+}
+
+#logo {
     font-size: 24px;
-    font-weight: 450;
-    padding: 12px;
-    justify-content: space-evenly;
-    background-color:darkslategray;
-    color: antiquewhite;
+    font-weight: 900;
+    color: #f9faf8;
 }
 
-.links {
+.navigation {
     display: flex;
-    margin-left: auto;
-    gap: 12px;
-    font-size: 18px;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.linebreak {
-    background-color: black;
-    height: 12px;
-}
-
-ul, a {
-    color: antiquewhite;
-    text-decoration: none;
+.navigation ul {
+    display: flex;
     list-style-type: none;
+    gap: 25px;
 }
 
-.info {
+.aboutme, a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.welcome {
+    display: flex;
+    padding: 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.welcome .left {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: space-between;
-    justify-content: center;
-    padding: 8px;
+    gap: 10px;
+}
+
+.welcome .right {
+    flex-shrink: 0;
+    width: 50%;
+}
+
+.hero {
+    color: #f9faf8;
+    font-weight: 900;
     font-size: 48px;
-    font-weight: bolder;
-   background-color: darkslategray;
 }
 
-p {
-    font-size: 18px;
-    color: #eee;
+button {
+    padding: 7px;
+    width: 120px;
+    background-color: whitesmoke;
+    border-radius: 8px;
 }
 
-.img {
+.welcome button {
+    border: none;
+}
+
+.image {
+    background-color: gray;
     display: flex;
-    justify-content: flex-end;
-    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    height: 215px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+main h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.square {
+    border: 4px solid black;
+    border-radius: 20px;
+    width: 160px;
+    height: 160px;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 7em 13em;
+}
+
+.quote em {
+    font-size: 36px;
+    font-weight: 100;
+    color: #1f2937;
+}
+
+.quote p {
+    align-self: flex-end;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #1f2937;
 }
