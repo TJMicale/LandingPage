@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +10,8 @@ body {
 }
 
 header {
-    background-color: dodgerblue;
-    padding: 16px;
+    background-color: #1f2937;
+    padding: 1em 13em;
 }
 
 #logo {
@@ -27,7 +29,7 @@ header {
 .navigation ul {
     display: flex;
     list-style-type: none;
-    gap: 25px;
+    gap: 1.5em;
 }
 
 .aboutme, a {
@@ -38,10 +40,10 @@ header {
 
 .welcome {
     display: flex;
-    padding: 18px;
+    padding: 7em 0;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 2em;
 }
 
 .welcome .left {
@@ -62,9 +64,9 @@ header {
 }
 
 button {
-    padding: 7px;
+    padding: 7px 1em;
     width: 120px;
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     border-radius: 8px;
 }
 
@@ -84,8 +86,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    padding: 0 13em;
+    margin-top: 3em;
 }
 
 main h2 {
@@ -94,11 +96,12 @@ main h2 {
     color: black;
 }
 
-.card-container {
+.card-container-secondary{
     display: flex;
-    align-items: center;
+   align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 3em 0 6em 0;
 }
 
 .card {
@@ -107,7 +110,7 @@ main h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: .5em;
 }
 
 .square {
@@ -136,4 +139,39 @@ main h2 {
     font-weight: bolder;
     font-size: 24px;
     color: #1f2937;
+}
+
+.reach {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 13em;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3882F6;
+    padding: 3em;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container button {
+    border: 2px solid #FFF;
+}
+
+strong {
+    font: 24px;
+    color: #FFF;
+}
+
+footer {
+    background-color: #1f2937;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
 }
